@@ -33,7 +33,17 @@ permalink: /portfolio/
     * Kakao, Naver, Google
 * DB erd 디자인 후 각 엔티티 생성
 * Typeorm을 이용한 데이터베이스 접근
-* Docker를 활용한 메인, 테스트용 서버 배포
+* ~~Docker를 활용한 메인, 테스트용 서버 배포~~
+
+### *영화 추천 챗봇 서비스 (2022.01 ~ 2022.06)
+[https://github.com/jiho5993/movchatbot](https://github.com/jiho5993/movchatbot)  
+카카오톡 챗봇 서비스를 활용해 인공지능 기반 챗봇 시스템을 제작했습니다.  
+_**현재 인공지능 서비스는 중단된 상태입니다.**_
+* Django / Docker / Oracle Cloud
+* 네이버 영화관 페이지에서 BeautifulSoup4를 통해 데이터 수집
+* 카카오 챗봇에서 정해진 형식을 통해 수집한 데이터를 적절히 변환
+* 크롤링 속도를 높이기 위해 멀티 프로세싱 프로그램 작성
+* Docker를 활용하여 Oracle Cloud 서버 배포
 
 ### *Gyumongeats - 쿠팡이츠 클론 (2021.02 ~ 2021.06)
 [https://github.com/jiho5993/gyumongeats](https://github.com/jiho5993/gyumongeats)  
@@ -44,15 +54,6 @@ permalink: /portfolio/
 * Python Crawling을 통한 음식점 데이터 수집
 * AWS Elastic Beanstalk 배포
 
-### *시네마 웹 어플리케이션 (2019.09 ~ 2019.12)
-[https://github.com/siroch/DataBase_cinema](https://github.com/siroch/DataBase_cinema)  
-* Next.js Express.js Mysql을 사용하고 Slack을 이용한 협업
-* 영화관입장권통합전산망이 제공하는 오픈 API를 이용
-* Axios를 이용한 RESTful API와 프론트 연동
-* 오픈 API를 이용한 JSON파싱
-* React Hooks를 이용한 상태관리, 파싱한 데이터를 이용해 최근에 개봉한 영화들 관리
-* 영화 나열 순서, 평점, 리뷰, JWT를 이용한 로그인 구현
-
 ### *채팅 웹 어플리케이션 (2019.04 ~ 2019.06)
 [https://github.com/jiho5993/open_source_chat_B-02](https://github.com/jiho5993/open_source_chat_B-02)
 * HTML CSS Socket.io를 사용하여 구현
@@ -62,11 +63,12 @@ permalink: /portfolio/
 ---
 
 # Skills
-진행했던 프로젝트에 사용된 기술들 입니다.
+사용할 줄 알거나 진행했던 프로젝트에 사용된 기술들 입니다.
 * Node.js
 * Javascript / Typescript / Python
-* Express.js / Nest.js
+* Express.js / Nest.js / Django
 * TypeORM / Sequelize
+* AWS EC2 / Oracle Cloud
 * Docker
 * MySQL
 * BeautifulSoup4
