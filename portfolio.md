@@ -78,7 +78,7 @@ _**현재 인공지능 서비스는 중단된 상태입니다.**_
     - back-end : 1명 (담당)
     - front-end : 1명
 - 프로젝트 기술 스택
-    - HTML / CSS / Socket.io / Heroku
+    - HTML / CSS / Express.js / Socket.io / Heroku
 - 프로젝트에서 담당했던 부분 / 설명
     - Socket.io를 활용한 실시간 양방향 통신 구현
     - Heroku로 간단한 배포
@@ -87,12 +87,19 @@ _**현재 인공지능 서비스는 중단된 상태입니다.**_
 ---
 
 # Skills
-사용할 줄 알거나 진행했던 프로젝트에 사용된 기술들 입니다.
+현재 사용중인 기술입니다.
 * Node.js
-* Javascript / Typescript / Python
-* Express.js / Nest.js / Django
-* TypeORM / Sequelize
-* AWS EC2 / Oracle Cloud
-* Docker
+* Javascript / Typescript
+* Express.js
+* TypeORM
+* AWS
 * MySQL
 * BeautifulSoup4
+
+프로젝트에 사용해봤거나 공부중인 기술입니다.
+* Python
+* Django / Nest.js
+* Sequelize
+* PostgreSQL
+* Oracle Cloud
+* Docker
