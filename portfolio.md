@@ -30,7 +30,7 @@ permalink: /portfolio/
 커리어에 관심이 많아 자기개발을 꾸준히 하지만, 중도포기하거나 어떻게 해야할지 몰라 자문을 구하는 디자이너들을 위한 서비스입니다.
 - 프로젝트 역할
     - designer : 2명
-    - back-end : 1명
+    - back-end : 1명 (담당)
     - front-end : 2명
 - 프로젝트 기술 스택
     - Nest.js / MySQL / TypeORM / Docker / ~~Nginx~~
@@ -46,16 +46,16 @@ permalink: /portfolio/
 카카오톡 챗봇 서비스를 활용해 인공지능 기반 챗봇 시스템을 제작했습니다.  
 _**현재 인공지능 서비스는 중단된 상태입니다.**_
 - 프로젝트 역할
-    - back-end : 1명
-    - 기획, 구상 : 3명
+    - back-end : 1명 (담당)
+    - 기획, 구상 : 3명 (담당)
     - 인공지능 개발 : 1명
 - 프로젝트 기술 스택
     - Django / Docker / Oracle Cloud / BeautifulSoup4 / Kakao i open builder
 - 프로젝트에서 담당했던 부분 / 설명
     - 네이버 영화관 페이지에서 BeautifulSoup4를 통한 데이터 수집
     - 카카오 챗봇에서 정해진 형식에 맞추기 위해 데이터를 적절히 가공
-    - 크롤링 속도를 높이기 위해 멀티 프로세싱 프로그램 작성
-        - 12초에서 2초의 성능을 보였음
+    -  크롤링 속도를 높이기 위해 멀티 프로세싱 프로그램 작성
+        - 12초에서 2초의 성능으로 개선
     - Docker를 활용하여 Oracle Cloud 서버 배포
 
 ### *Gyumongeats - 쿠팡이츠 클론 (2021.02 ~ 2021.06)
@@ -63,7 +63,7 @@ _**현재 인공지능 서비스는 중단된 상태입니다.**_
 쿠팡이츠라는 음식 배달 어플을 클론하는 프로젝트입니다.  
 유저, 주문, 음식점 조회 서비스 등 서비스 사용에 있어 꼭 필요한 API를 구현했습니다.  
 - 프로젝트 역할
-    - back-end : 1명
+    - back-end : 1명 (담당)
     - front-end : 1명
 - 프로젝트 기술 스택
     - Express.js / MySQL / AWS Elastic Beanstalk / BeautifulSoup4 / Sequelize
@@ -75,8 +75,8 @@ _**현재 인공지능 서비스는 중단된 상태입니다.**_
 ### *채팅 웹 어플리케이션 (2019.04 ~ 2019.06)
 [https://github.com/jiho5993/open_source_chat_B-02](https://github.com/jiho5993/open_source_chat_B-02)
 - 프로젝트 역할
-    - Back-end : 1명
-    - Front-end : 1명
+    - back-end : 1명 (담당)
+    - front-end : 1명
 - 프로젝트 기술 스택
     - HTML / CSS / Socket.io / Heroku
 - 프로젝트에서 담당했던 부분 / 설명
