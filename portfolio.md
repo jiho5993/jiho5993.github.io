@@ -28,39 +28,61 @@ permalink: /portfolio/
 ### *NerdIT - 디자이너들을 위한 자기개발 서비스 (2022.01 ~ 진행중)
 [https://github.com/DCPT-KNP/NerdIT-Backend](https://github.com/DCPT-KNP/NerdIT-Backend)  
 커리어에 관심이 많아 자기개발을 꾸준히 하지만, 중도포기하거나 어떻게 해야할지 몰라 자문을 구하는 디자이너들을 위한 서비스입니다.
-* Nest.js / MySQL / AWS EC2 / Docker
-* 소셜 로그인을 통해 서비스에 쉽게 접근 가능하도록 구현
-    * Kakao, Naver, Google
-* Nest.js Guard로 서버에서 인증된 유저인지 판별
-* DB erd 디자인 후 TypeORM을 활용한 엔티티 관리
-* Docker를 활용한 ~~메인~~, 테스트용 서버 배포
+- 프로젝트 역할
+    - designer : 2명
+    - back-end : 1명
+    - front-end : 2명
+- 프로젝트 기술 스택
+    - Nest.js / MySQL / TypeORM / Docker / ~~Nginx~~
+- 프로젝트에서 담당했던 부분 / 설명
+    - 소셜 로그인을 통해 서비스에 쉽게 접근 가능하도록 구현
+        - 카카오, 네이버, 구글
+    - Nest.js Guard로 서버에서 인증된 유저인지 판별
+    - DB erd 디자인 후 TypeORM을 활용한 엔티티 관리
+    - Docker를 활용한 ~~메인~~, 테스트용 서버 배포
 
 ### *영화 추천 챗봇 서비스 (2022.01 ~ 2022.06)
 [https://github.com/jiho5993/movchatbot](https://github.com/jiho5993/movchatbot)  
 카카오톡 챗봇 서비스를 활용해 인공지능 기반 챗봇 시스템을 제작했습니다.  
 _**현재 인공지능 서비스는 중단된 상태입니다.**_
-* Django / Docker / Oracle Cloud
-* 네이버 영화관 페이지에서 BeautifulSoup4를 통해 데이터 수집
-* 카카오 챗봇에서 정해진 형식을 통해 수집한 데이터를 적절히 변환
-* 크롤링 속도를 높이기 위해 멀티 프로세싱 프로그램 작성
-* Docker를 활용하여 Oracle Cloud 서버 배포
+- 프로젝트 역할
+    - back-end : 1명
+    - 기획, 구상 : 3명
+    - 인공지능 개발 : 1명
+- 프로젝트 기술 스택
+    - Django / Docker / Oracle Cloud / BeautifulSoup4 / Kakao i open builder
+- 프로젝트에서 담당했던 부분 / 설명
+    - 네이버 영화관 페이지에서 BeautifulSoup4를 통한 데이터 수집
+    - 카카오 챗봇에서 정해진 형식에 맞추기 위해 데이터를 적절히 가공
+    - 크롤링 속도를 높이기 위해 멀티 프로세싱 프로그램 작성
+        - 12초에서 2초의 성능을 보였음
+    - Docker를 활용하여 Oracle Cloud 서버 배포
 
 ### *Gyumongeats - 쿠팡이츠 클론 (2021.02 ~ 2021.06)
 [https://github.com/jiho5993/gyumongeats](https://github.com/jiho5993/gyumongeats)  
 쿠팡이츠라는 음식 배달 어플을 클론하는 프로젝트입니다.  
 유저, 주문, 음식점 조회 서비스 등 서비스 사용에 있어 꼭 필요한 API를 구현했습니다.  
-* Express.js / MySQL / AWS Elastic Beanstalk
-* Sequelize라는 ORM을 이용한 데이터베이스 접근
-* Python Crawling을 통한 음식점 데이터 수집
-* AWS Elastic Beanstalk 배포
+- 프로젝트 역할
+    - back-end : 1명
+    - front-end : 1명
+- 프로젝트 기술 스택
+    - Express.js / MySQL / AWS Elastic Beanstalk / BeautifulSoup4 / Sequelize
+- 프로젝트에서 담당했던 부분 / 설명
+    - Sequelize ORM을 이용한 데이터베이스 관리
+    - Python Crawling을 통한 음식점 데이터 수집
+    - AWS Elastic Beanstalk 배포
 
 ### *채팅 웹 어플리케이션 (2019.04 ~ 2019.06)
 [https://github.com/jiho5993/open_source_chat_B-02](https://github.com/jiho5993/open_source_chat_B-02)
-* HTML, CSS, Socket.io를 사용하여 제작
-* Socket.io를 통한 실시간 양방향 통신 구현
-* Git을 이용한 프로젝트 관리, Force Push같은 상황에 유연한 대처
-* Heroku로 간단한 배포 완료
-    * [https://os-chat-b02.herokuapp.com](https://os-chat-b02.herokuapp.com)
+- 프로젝트 역할
+    - Back-end : 1명
+    - Front-end : 1명
+- 프로젝트 기술 스택
+    - HTML / CSS / Socket.io / Heroku
+- 프로젝트에서 담당했던 부분 / 설명
+    - Socket.io를 활용한 실시간 양방향 통신 구현
+    - Heroku로 간단한 배포
+        - [https://os-chat-b02.herokuapp.com](https://os-chat-b02.herokuapp.com)
 
 ---
 
