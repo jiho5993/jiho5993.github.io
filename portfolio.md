@@ -90,15 +90,16 @@ _**현재 인공지능 서비스는 중단된 상태입니다.**_
 현재 사용중인 기술입니다.
 * Node.js
 * Javascript / Typescript
-* Express.js
+* Express.js / Nest.js
 * TypeORM
-* AWS
+* AWS / Heroku
 * MySQL
 * BeautifulSoup4
 
 프로젝트에 사용해봤거나 공부중인 기술입니다.
 * Python
-* Django / Nest.js
+* Django
+* Socket.io
 * Sequelize
 * PostgreSQL
 * Oracle Cloud
