@@ -92,7 +92,7 @@ _**현재 인공지능 서비스는 중단된 상태입니다.**_
 * Javascript / Typescript
 * Express.js / Nest.js
 * TypeORM
-* AWS / Heroku
+* AWS (EC2) / Heroku
 * MySQL
 * BeautifulSoup4
 
