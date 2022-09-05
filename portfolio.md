@@ -27,7 +27,8 @@ permalink: /portfolio/
 ---
 
 # Projects
-### *NerdIT - 디자이너들을 위한 자기개발 서비스 (2022.01 ~ 진행중)
+_프로젝트 제목을 클릭하시면 자세한 설명을 보실 수 있습니다._  
+### *[NerdIT - 디자이너들을 위한 자기개발 서비스 (2022.01 ~ 진행중)](https://jiho5993.notion.site/NerdIT-fcf01cc2e4e14eef9eba01f0094d1ac1)
 [https://github.com/DCPT-KNP/NerdIT-Backend](https://github.com/DCPT-KNP/NerdIT-Backend)  
 커리어에 관심이 많아 자기개발을 꾸준히 하지만, 중도포기하거나 어떻게 해야할지 몰라 자문을 구하는 디자이너들을 위한 서비스입니다.
 - 프로젝트 역할
@@ -43,7 +44,7 @@ permalink: /portfolio/
     - DB erd 디자인 후 TypeORM을 활용한 엔티티 관리
     - Docker를 활용한 ~~메인~~, 테스트용 서버 배포
 
-### *영화 추천 챗봇 서비스 (2022.01 ~ 2022.06)
+### *[영화 추천 챗봇 서비스 (2022.01 ~ 2022.06)](https://jiho5993.notion.site/c5edaffe73b24017b9494dc2bc979bf3)
 [https://github.com/jiho5993/movchatbot](https://github.com/jiho5993/movchatbot)  
 카카오톡 챗봇 서비스를 활용해 인공지능 기반 챗봇 시스템을 제작했습니다.  
 _**현재 인공지능 서비스는 중단된 상태입니다.**_
@@ -60,7 +61,7 @@ _**현재 인공지능 서비스는 중단된 상태입니다.**_
         - 12초에서 2초의 성능으로 개선
     - Docker를 활용하여 Oracle Cloud 서버 배포
 
-### *Gyumongeats - 쿠팡이츠 클론 (2021.02 ~ 2021.06)
+### *[Gyumongeats - 쿠팡이츠 클론 (2021.02 ~ 2021.06)](https://jiho5993.notion.site/Gyumongeats-15e3deea196d40289006cbaed9b445eb)
 [https://github.com/jiho5993/gyumongeats](https://github.com/jiho5993/gyumongeats)  
 쿠팡이츠라는 음식 배달 어플을 클론하는 프로젝트입니다.  
 유저, 주문, 음식점 조회 서비스 등 서비스 사용에 있어 꼭 필요한 API를 구현했습니다.  
@@ -74,7 +75,7 @@ _**현재 인공지능 서비스는 중단된 상태입니다.**_
     - Python Crawling을 통한 음식점 데이터 수집
     - AWS Elastic Beanstalk 배포
 
-### *채팅 웹 어플리케이션 (2019.04 ~ 2019.06)
+### *[채팅 웹 어플리케이션 (2019.04 ~ 2019.06)](https://jiho5993.notion.site/90a1989df5e3448bafc991ac5004971a)
 [https://github.com/jiho5993/open_source_chat_B-02](https://github.com/jiho5993/open_source_chat_B-02)
 - 프로젝트 역할
     - back-end : 1명 (담당)
