@@ -4,6 +4,8 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
+![me]({{ site.baseurl }}/images/me.JPG)
+
 **소속** : 한양대학교 ERICA 캠퍼스 소프트웨어학부 18학번  
 **Email** : [jiho5993@gmail.com](mailto:jiho5993@gmail.com)  
 **Github** : [http://github.com/jiho5993](http://github.com/jiho5993)  
