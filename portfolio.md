@@ -33,7 +33,7 @@ permalink: /portfolio/
     - back-end : 1명 (담당)
     - front-end : 2명
 - 프로젝트 기술 스택
-    - Nest.js / MySQL / TypeORM / Docker / ~~Nginx~~
+    - Nest.js / MySQL / TypeORM / Docker / Nginx
 - 프로젝트에서 담당했던 부분 / 설명
     - 소셜 로그인을 통해 서비스에 쉽게 접근 가능하도록 구현
         - 카카오, 네이버, 구글
@@ -99,6 +99,7 @@ _**현재 인공지능 서비스는 중단된 상태입니다.**_
 프로젝트에 사용해봤거나 공부중인 기술입니다.
 * Python
 * Django
+* Nginx
 * Socket.io
 * Sequelize
 * PostgreSQL
