@@ -71,6 +71,9 @@ _**현재 인공지능 서비스는 중단된 상태입니다.**_
 - 프로젝트 기술 스택
     - Express.js / MySQL / AWS Elastic Beanstalk / BeautifulSoup4 / Sequelize
 - 프로젝트에서 담당했던 부분 / 설명
+    - 실제 서비스 사용을 위한 기능 구현
+        - 유저 회원가입, 로그인
+        - 음식점 조회, 장바구니, 주문, 음식 리뷰
     - Sequelize ORM을 이용한 데이터베이스 관리
     - Python Crawling을 통한 음식점 데이터 수집
     - AWS Elastic Beanstalk 배포
