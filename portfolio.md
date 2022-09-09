@@ -36,12 +36,13 @@ _프로젝트 제목을 클릭하시면 자세한 설명을 보실 수 있습니
     - back-end : 1명 (담당)
     - front-end : 2명
 - 프로젝트 기술 스택
-    - Nest.js / MySQL / TypeORM / Docker / Nginx
+    - Nest.js / MySQL / TypeORM / Docker / Nginx / AWS S3
 - 프로젝트에서 담당했던 부분 / 설명
     - 소셜 로그인을 통해 서비스에 쉽게 접근 가능하도록 구현
         - 카카오, 네이버, 구글
     - Nest.js Guard로 서버에서 인증된 유저인지 판별
     - DB erd 디자인 후 TypeORM을 활용한 엔티티 관리
+    - AWS S3로 이미지 서버 관리
     - Docker를 활용한 ~~메인~~, 테스트용 서버 배포
 
 ### *[영화 추천 챗봇 서비스 (2022.01 ~ 2022.06)](https://jiho5993.notion.site/c5edaffe73b24017b9494dc2bc979bf3)
@@ -74,9 +75,10 @@ _**현재 인공지능 서비스는 중단된 상태입니다.**_
     - 실제 서비스 사용을 위한 기능 구현
         - 유저 회원가입, 로그인
         - 음식점 조회, 장바구니, 주문, 음식 리뷰
+    - transaction을 사용한 여러 쿼리 handling
     - Sequelize ORM을 이용한 데이터베이스 관리
     - Python Crawling을 통한 음식점 데이터 수집
-    - AWS Elastic Beanstalk 배포
+    - AWS Elastic Beanstalk 배포 (현재 중단)
 
 ### *[채팅 웹 어플리케이션 (2019.04 ~ 2019.06)](https://jiho5993.notion.site/90a1989df5e3448bafc991ac5004971a)
 [https://github.com/jiho5993/open_source_chat_B-02](https://github.com/jiho5993/open_source_chat_B-02)
