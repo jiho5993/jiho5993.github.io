@@ -27,7 +27,7 @@ permalink: /portfolio/
 ---
 
 # Projects
-_프로젝트 제목을 클릭하시면 자세한 설명을 보실 수 있습니다._  
+<span style="color:red">_프로젝트 제목을 클릭하시면 자세한 설명을 보실 수 있습니다._  </span>
 ### *[NerdIT - 디자이너들을 위한 자기개발 서비스 (2022.01 ~ 진행중)](https://jiho5993.notion.site/NerdIT-fcf01cc2e4e14eef9eba01f0094d1ac1)
 [https://github.com/DCPT-KNP/NerdIT-Backend](https://github.com/DCPT-KNP/NerdIT-Backend)  
 커리어에 관심이 많아 자기개발을 꾸준히 하지만, 중도포기하거나 어떻게 해야할지 몰라 자문을 구하는 디자이너들을 위한 서비스입니다.
