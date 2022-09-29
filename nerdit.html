@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>DevFolio Bootstrap Portfolio Template - Portfolio Details</title>
+  <title>박지호 포트폴리오</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -32,39 +32,26 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
+  <!-- ======= Header (미완) ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">DevFolio</a></h1>
+      <h1 class="logo"><a href="index.html">Portfolio</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto active" href="/">Home</a></li>
+          <!-- <li><a class="nav-link scrollto" href="/">About</a></li>
+          <li><a class="nav-link scrollto" href="/">Project</a></li> -->
+          
+          <li class="dropdown"><a href="#"><span>More Info</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="http://github.com/jiho5993">Github</a></li>
+              <li><a href="mailto:jiho5993@gmail.com">Email 보내기</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -72,17 +59,17 @@
     </div>
   </header><!-- End Header -->
 
-  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/project/nerdit-main.png)">
     <div class="overlay-mf"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="hero-title mb-4">Portfolio Details</h2>
+          <h2 class="hero-title mb-4">NerdIT</h2>
           <ol class="breadcrumb d-flex justify-content-center">
-            <li class="breadcrumb-item">
+            <!-- <li class="breadcrumb-item">
               <a href="#">Home</a>
-            </li>
-            <li class="breadcrumb-item active">Portfolio Details</li>
+            </li> -->
+            <li class="breadcrumb-item active">디자이너들을 위한 자기개발 서비스 / 2022.01 ~ (진행중)</li>
           </ol>
         </div>
       </div>
@@ -90,6 +77,149 @@
   </div>
 
   <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <!--/ Stack /-->
+          <section id="service" class="services-mf route">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="title-box text-center">
+                    <h3 class="title-a">
+                      Project Stack
+                    </h3>
+                    <p class="subtitle-a">
+                      프로젝트에 사용된 기술 스택입니다.
+                    </p>
+                    <div class="line-mf"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- nestjs -->
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <span class="ico-circle"><i class="ion-monitor"></i></span>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">Nest.js</h2>
+                      <p class="s-description text-center">
+                        express와는 달리 아키텍처 구조가 통일되어 있어 협업이나 프로젝트의 구조를 한 눈에 쉽게 파악할 수 있고,</br>
+                        각 middleware의 기능이 정해져 있으며, life cycle의 순서가 정해져 있기 때문에 이 프레임워크를 채택했습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- typescript -->
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <span class="ico-circle"><i class="ion-code-working"></i></span>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">Typescript</h2>
+                      <p class="s-description text-center">
+                        타입스크립트는 자바스크립트를 기반으로한 정적 타입 문법을 추가한 프로그래밍 언어입니다.</br>
+                        때문에 목적에 맞지 않는 타입이나 변수가 있으면 에러를 감지해서 개발할때 편의성을 얻을 수 있어 사용했습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- TypeORM -->
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <span class="ico-circle"><i class="ion-camera"></i></span>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">TypeORM</h2>
+                      <p class="s-description text-center">
+                        orm은 객체지향적인 코드로 인해 더 직관적이고 로직에 집중할 수 있도록 도와줍니다.</br>
+                        그로 인해 재사용 및 유지보수의 편리성이 증가해 더 쉽게 프로그래밍할 수 있기 때문에 채택했습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- S3 -->
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">AWS S3</h2>
+                      <p class="s-description text-center">
+                        프로필 이미지 같은 정적인 데이터를 다루기 위해 이미지 서버를 따로 생성하였습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Docker -->
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <span class="ico-circle"><i class="ion-paintbrush"></i></span>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">Docker</h2>
+                      <p class="s-description text-center">
+                        함께 협업하는 개발자분들이 서버를 테스트하기 위해 제가 사용했던 환경을 그대로 구축하는 시간을 단축하고 싶었습니다.</br>
+                        이런 불편을 줄이고자 도커 이미지를 만들어 배포하였습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--/ Section Services End /-->
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Stack</strong>: </li>
+                <li><strong>Client</strong>: ASU Company</li>
+                <li><strong>Project date</strong>: 01 March, 2020</li>
+                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>This is an example of portfolio detail</h2>
+              <p>
+                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web design</li>
+                <li><strong>Client</strong>: ASU Company</li>
+                <li><strong>Project date</strong>: 01 March, 2020</li>
+                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>This is an example of portfolio detail</h2>
+              <p>
+                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
