@@ -78,27 +78,23 @@
 
   <main id="main">
 
-    <!-- ======= Portfolio Details Section ======= -->
+    <!-- ======= 프로젝트 기본 정보 ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
         <div class="row gy-4">
 
+          <!-- 프로젝트 정보 -->
           <div class="portfolio-info">
             <h3>Project information</h3>
             <ul>
-              <li><strong>Stack</strong>: </li>
-              <li><strong>Client</strong>: ASU Company</li>
-              <li><strong>Project date</strong>: 01 March, 2020</li>
-              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              <li><strong>구성원</strong>: designer(2명), backend(1명), frontend(2명)</li>
+              <li><strong>프로젝트 기간</strong>: 2022.01 ~ (진행중)</li>
+              <li><strong>Github</strong>: <a href="https://github.com/DCPT-KNP/NerdIT-Backend" style="color: blue;">https://github.com/DCPT-KNP/NerdIT-Backend</a></li>
+              <li><strong>API 문서</strong>: <a href="https://documenter.getpostman.com/view/9352500/VUqpsxcG" style="color: blue;">https://documenter.getpostman.com/view/9352500/VUqpsxcG</a></li>
+              </br>
+              <li><strong>프론트엔드는 진행중이라 아직 결과물이 없습니다.</strong></li>
             </ul>
-          </div>
-
-          <div class="portfolio-description">
-            <h2>This is an example of portfolio detail</h2>
-            <p>
-              Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-            </p>
           </div>
 
           <!--/ Stack /-->
@@ -137,7 +133,7 @@
                 <div class="col-md-4">
                   <div class="service-box">
                     <div class="service-ico">
-                      <span class="ico-circle"><i><img src="assets/img/logo/typescript.svg" style="height: 80px;"></i></span>
+                      <span class="ico-circle"><i><img src="assets/img/logo/typescript.svg" style="height: 70px;"></i></span>
                     </div>
                     <div class="service-content">
                       <h2 class="s-title">Typescript</h2>
@@ -197,75 +193,110 @@
           </section>
           <!--/ Section Services End /-->
           
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
 
         </div>
 
       </div>
     </section><!-- End Portfolio Details Section -->
 
-    <!-- ======= Portfolio Details Section ======= -->
+    <!-- ======= 상세 부분 1 ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio-details-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio-details-2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio-details-3.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
-
+        <div class="portfolio-description">
+          <h2>1. 소셜 로그인</h2>
+          <p>
+            소셜 로그인을 도입하기 위해 passport라는 모듈을 활용해 도입했지만, 실제로는 잘 작동하지 않았습니다.</br>
+            확실하게 구현하기 위해선 소셜 로그인이라는 기술 자체가 어떤 흐름을 가지고 있고, 구현에 있어서 무엇이 필요한지 이해해야 도입할 수 있을거라 생각했습니다.</br>
+            passport-kakao같은 모듈도 결국 kakao가 제공하는 REST API를 통해 구현한 것이기 때문에 백엔드에서는 passport 모듈은 사용하지 않고 REST API를 통해 구현했습니다.</br>
+            코드 : <a href="https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/auth/auth.service.ts#L75" style="color: blue;">https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/auth/auth.service.ts#L75</a>
+          </p>
         </div>
+
+        <img src="assets/img/project//nerdit/sns1.png" style="max-width:30%; height:auto;">
+        <img src="assets/img/project//nerdit/sns2.png" style="max-width:30%; height:auto;">
+        <img src="assets/img/project//nerdit/sns3.png" style="max-width:30%; height:auto;">
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+    <!-- ======= 상세 부분 2 ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-description">
+          <h2>2. Auth Guard 구현</h2>
+          <p>
+            컨트롤러를 통해 들어오는 요청에 Guard를 걸어놓아 api를 요청하는 유저가 api를 요청할 자격이 있는지, 또는 유효한 유저인지 판별합니다.</br>
+            미들웨어를 사용할 수도 있지만, 미들웨어는 next()이후로 어떤 핸들러가 실행될지 모르기 때문에 이 단점을 보완한 가드를 적용했습니다.</br>
+            코드 : <a href="https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/auth/guards/jwt-auth.guard.ts" style="color: blue;">https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/auth/guards/jwt-auth.guard.ts</a>
+          </p>
+        </div>
+
+        <img src="assets/img/project//nerdit/guard1.png" style="max-width:40%; height:auto;">
+        <!-- <img src="assets/img/project//nerdit/sns2.png" style="max-width:30%; height:auto;">
+        <img src="assets/img/project//nerdit/sns3.png" style="max-width:30%; height:auto;"> -->
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+    <!-- ======= 상세 부분 3 ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-description">
+          <h2>3. TypeORM을 활용한 Entity 관리</h2>
+          <p>
+            entities 폴더에 각 테이블의 정보가 담긴 object를 생성하였습니다.</br>
+            orm으로 만든 객체를 활용해 객체지향적인 코드를 구성할 수 있었고, 쿼리 작성이나 데이터 관리에 대한 시간을 단축시켜 빠르게 구현할 수 있었습니다.</br>
+            코드 : <a href="https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/entities/user.entity.ts" style="color: blue;">https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/entities/user.entity.ts</a>
+          </p>
+        </div>
+
+        <img src="assets/img/project/nerdit/orm.png" style="max-width:40%; height:auto;">
+        <!-- <img src="assets/img/project//nerdit/sns2.png" style="max-width:30%; height:auto;">
+        <img src="assets/img/project//nerdit/sns3.png" style="max-width:30%; height:auto;"> -->
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+    <!-- ======= 상세 부분 4 ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-description">
+          <h2>4. Docker 이미지 생성 후 테스트용 서버 배포</h2>
+          <p>
+            Docker를 사용하기 전, 프론트에서 서버를 실행하기 위해 DB나 Node.js의 버전에 맞게 환경을 구축해야했지만,</br>
+            이번 프로젝트에서는 Docker 사용하여 프론트엔드 개발자 분들이 백엔드 환경을 따로 구축하지 않아도 사용 가능한 환경을 제공했습니다.</br>
+            간단한 파일 작성으로 쉽게 환경을 제공할 수 있고 pull하기만하면 쉽게 사용할 수 있다는 장점을 알았습니다.</br>
+            코드 : <a href="https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/docker-compose.test.yml" style="color: blue;">https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/docker-compose.test.yml</a>
+          </p>
+        </div>
+
+        <!-- <img src="assets/img/project//nerdit/sns2.png" style="max-width:30%; height:auto;">
+        <img src="assets/img/project//nerdit/sns3.png" style="max-width:30%; height:auto;"> -->
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+    <!-- ======= 상세 부분 5 ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-description">
+          <h2>5. DTO를 활용하여 클라이언트와 서버 간 데이터 유효성 검사</h2>
+          <p>
+            express에서는 클라이언트로부터 body 데이터를 받으면, controller에서 필요없거나 유효한 데이터가 있는지 검사하는 로직을 직접 구현해야합니다.</br>
+            매번 구현하는 것은 비효율적이므로 DTO class를 만들어주었고, Nest.js에서 추천하는 class-validator라는 모듈로 DTO 유효성을 검사했습니다.</br>
+            client요청이 controller에 바로 전달되기전 검사해야하므로 서버 애플리케이션 전체에 validation pipe를 설정해두었습니다. </br>
+            코드 : <a href="https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/user/dto/create-user.dto.ts" style="color: blue;">https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/user/dto/create-user.dto.ts</a>
+          </p>
+        </div>
+        
+        <img src="assets/img/project/nerdit/dto2.png" style="max-width:70%; height:auto;">
+        <img src="assets/img/project/nerdit/dto1.png" style="max-width:30%; height:auto;">
+        <!-- <img src="assets/img/project//nerdit/sns3.png" style="max-width:30%; height:auto;"> -->
 
       </div>
     </section><!-- End Portfolio Details Section -->
