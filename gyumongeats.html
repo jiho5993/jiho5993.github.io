@@ -44,7 +44,16 @@
         <ul>
           <li><a class="nav-link scrollto active" href="/">Home</a></li>
           <li><a class="nav-link scrollto" href="/#about">About</a></li>
-          <li><a class="nav-link scrollto" href="/#project">Project</a></li>
+          <!-- <li><a class="nav-link scrollto" href="/#project">Project</a></li> -->
+
+          <li class="dropdown"><a calss="nav-link scrollto" href="#project"><span>Project</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/nerdit.html">NerdIT</a></li>
+              <li><a href="/movie-chatbot.html">영화 추천 챗봇 서비스</a></li>
+              <li><a href="/gyumongeats.html">Gyumongeats</a></li>
+              <li><a href="/chat.html">채팅 웹 어플리케이션</a></li>
+            </ul>
+          </li>
           
           <li class="dropdown"><a href="#"><span>More Info</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -59,17 +68,17 @@
     </div>
   </header><!-- End Header -->
 
-  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/project/nerdit-main.png)">
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/project/gyumongeats-main.png)">
     <div class="overlay-mf"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="hero-title mb-4">NerdIT</h2>
+          <h2 class="hero-title mb-4">Gyumongeats</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <!-- <li class="breadcrumb-item">
               <a href="#">Home</a>
             </li> -->
-            <li class="breadcrumb-item active">디자이너들을 위한 자기개발 서비스 / 2022.01 ~ (진행중)</li>
+            <li class="breadcrumb-item active">쿠팡이츠 클론 / 2021.02 ~ 2021.06</li>
           </ol>
         </div>
       </div>
@@ -88,12 +97,11 @@
           <div class="portfolio-info">
             <h3>Project information</h3>
             <ul>
-              <li><strong>구성원</strong>: designer(2명), backend(1명), frontend(2명)</li>
-              <li><strong>프로젝트 기간</strong>: 2022.01 ~ (진행중)</li>
-              <li><strong>Github</strong>: <a href="https://github.com/DCPT-KNP/NerdIT-Backend" style="color: blue;">https://github.com/DCPT-KNP/NerdIT-Backend</a></li>
-              <li><strong>API 문서</strong>: <a href="https://documenter.getpostman.com/view/9352500/VUqpsxcG" style="color: blue;">https://documenter.getpostman.com/view/9352500/VUqpsxcG</a></li>
+              <li><strong>구성원</strong>: backend(1명), frontend(1명)</li>
+              <li><strong>프로젝트 기간</strong>: 2021.02 ~ 2021.06</li>
+              <li><strong>Github</strong>: <a href="https://github.com/jiho5993/gyumongeats" style="color: blue;">https://github.com/jiho5993/gyumongeats</a></li>
               </br>
-              <li><strong>프론트엔드는 진행중이라 아직 결과물이 없습니다.</strong></li>
+              <li><strong>배포는 현재 중단된 상태입니다.</strong></li>
             </ul>
           </div>
 
@@ -114,44 +122,28 @@
                 </div>
               </div>
               <div class="row">
-                <!-- nestjs -->
+                <!-- Express.js -->
                 <div class="col-md-4">
                   <div class="service-box">
                     <div class="service-ico">
-                      <span class="ico-circle"><i><img src="assets/img/logo/nestjs.svg" style="height: 80px;"></i></span>
+                      <span class="ico-circle"><i><img src="assets/img/logo/express.png" style="height: 90px;"></i></span>
                     </div>
                     <div class="service-content">
-                      <h2 class="s-title">Nest.js</h2>
+                      <h2 class="s-title">Express.js</h2>
                       <p class="s-description text-center">
-                        express와는 달리 아키텍처 구조가 통일되어 있어 협업이나 프로젝트의 구조를 한 눈에 쉽게 파악할 수 있고,</br>
-                        각 middleware의 기능이 정해져 있으며, life cycle의 순서가 정해져 있기 때문에 이 프레임워크를 채택했습니다.
+                        가벼운 코드로 웹 서버를 구현할 수 있다는 장점과 함께, 코드의 자유도가 높아 프로젝트 구조를 개발자의 마음대로 쉽게 구성할 수 있습니다.
                       </p>
                     </div>
                   </div>
                 </div>
-                <!-- typescript -->
+                <!-- sequelize -->
                 <div class="col-md-4">
                   <div class="service-box">
                     <div class="service-ico">
-                      <span class="ico-circle"><i><img src="assets/img/logo/typescript.svg" style="height: 70px;"></i></span>
+                      <span class="ico-circle"><i><img src="assets/img/logo/sequelize.png" style="height: 65px;"></i></span>
                     </div>
                     <div class="service-content">
-                      <h2 class="s-title">Typescript</h2>
-                      <p class="s-description text-center">
-                        타입스크립트는 자바스크립트를 기반으로한 정적 타입 문법을 추가한 프로그래밍 언어입니다.</br>
-                        때문에 목적에 맞지 않는 타입이나 변수가 있으면 에러를 감지해서 개발할때 편의성을 얻을 수 있어 사용했습니다.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- TypeORM -->
-                <div class="col-md-4">
-                  <div class="service-box">
-                    <div class="service-ico">
-                      <span class="ico-circle"><i><img src="assets/img/logo/typeorm.png" style="height: 80px;"></i></span>
-                    </div>
-                    <div class="service-content">
-                      <h2 class="s-title">TypeORM</h2>
+                      <h2 class="s-title">Sequelize</h2>
                       <p class="s-description text-center">
                         orm은 객체지향적인 코드로 인해 더 직관적이고 로직에 집중할 수 있도록 도와줍니다.</br>
                         그로 인해 재사용 및 유지보수의 편리성이 증가해 더 쉽게 프로그래밍할 수 있기 때문에 채택했습니다.
@@ -159,35 +151,51 @@
                     </div>
                   </div>
                 </div>
-                <!-- S3 -->
+                <!-- MySQL -->
                 <div class="col-md-4">
                   <div class="service-box">
                     <div class="service-ico">
-                      <span class="ico-circle"><i><img src="assets/img/logo/s3.png" style="height: 80px;"></i></span>
+                      <span class="ico-circle"><i><img src="assets/img/logo/mysql.png" style="height: 70px;"></i></span>
                     </div>
                     <div class="service-content">
-                      <h2 class="s-title">AWS S3</h2>
+                      <h2 class="s-title">MySQL</h2>
                       <p class="s-description text-center">
-                        프로필 이미지 같은 정적인 데이터를 다루기 위해 이미지 서버를 따로 생성하였습니다.
+                        설치와 관리가 비교적 쉽고, 대규모 데이터베이스를 다룰 필요가 없었기 때문에 MySQL을 채택했습니다.</br>
                       </p>
                     </div>
                   </div>
                 </div>
-                <!-- Docker -->
+                <!-- aws eb -->
                 <div class="col-md-4">
                   <div class="service-box">
                     <div class="service-ico">
-                      <span class="ico-circle"><i><img src="assets/img/logo/docker.webp" style="height: 65px;"></i></span>
+                      <span class="ico-circle"><i><img src="assets/img/logo/eb.png" style="height: 65px;"></i></span>
                     </div>
                     <div class="service-content">
-                      <h2 class="s-title">Docker</h2>
+                      <h2 class="s-title">AWS Elastic Beanstalk</h2>
                       <p class="s-description text-center">
-                        함께 협업하는 개발자분들이 서버를 테스트하기 위해 제가 사용했던 환경을 그대로 구축하는 시간을 단축하고 싶었습니다.</br>
-                        이런 불편을 줄이고자 도커 이미지를 만들어 배포하였습니다.
+                        ec2와는 달리 세부적인 세팅없이 가장 쉽고 빠르게 배포할 수 있다고 하는 eb를 선택했습니다.</br>
+                        단순한 코드 업로드를 통해 배포를 진행했습니다.
                       </p>
                     </div>
                   </div>
                 </div>
+                <!-- bs4 -->
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <span class="ico-circle"><i><img src="assets/img/logo/bs4.png" style="height: 60px;"></i></span>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">BEAUTIFULSOUP</h2>
+                      <p class="s-description text-center">
+                        <em>적당한 로고가 없어 수프 사진으로 대체했습니다..</em></br>
+                        실제 음식점 데이터를 수집하기 위해 사용했습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
               </div>
             </div>
           </section>
@@ -218,18 +226,17 @@
         </div>
 
         <div class="portfolio-description">
-          <h2>1. 소셜 로그인</h2>
+          <h2>1. Transaction을 사용하여 여러 연산 처리</h2>
           <p>
-            소셜 로그인을 도입하기 위해 passport라는 모듈을 활용해 도입했지만, 실제로는 잘 작동하지 않았습니다.</br>
-            확실하게 구현하기 위해선 소셜 로그인이라는 기술 자체가 어떤 흐름을 가지고 있고, 구현에 있어서 무엇이 필요한지 이해해야 도입할 수 있을거라 생각했습니다.</br>
-            passport-kakao같은 모듈도 결국 kakao가 제공하는 REST API를 통해 구현한 것이기 때문에 백엔드에서는 passport 모듈은 사용하지 않고 REST API를 통해 구현했습니다.</br>
-            코드 : <a href="https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/auth/auth.service.ts#L75" style="color: blue;">https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/auth/auth.service.ts#L75</a>
+            어플에서 주문할 때 여러 DB 연산이 필요했었는데, 만약 어떤 오류 때문에 주문을 실패하는 현상이 발생하면 이전에 처리했던 DB 연산을 rollback시킬 필요가 있었습니다.</br>
+            학교에서 데이터베이스 이론 시간에 배운 transaction이라는 개념이 떠올랐고 그 개념을 프로젝트에 바로 적용시켜 처리할 수 있었습니다.</br></br>
+            이용자가 사전에 미리 담아둔 장바구니 목록을 OrderingMenu라는 테이블에 담고, 주문 정보를 새로 생성할 수 있도록 처리했습니다.</br>
+            코드 : <a href="https://github.com/jiho5993/gyumongeats/blob/master/back/routes/api/order/order.controller.js#L9" style="color: blue;">https://github.com/jiho5993/gyumongeats/blob/master/back/routes/api/order/order.controller.js#L9</a>
           </p>
         </div>
 
-        <img src="assets/img/project//nerdit/sns1.png" style="max-width:30%; height:auto;">
-        <img src="assets/img/project//nerdit/sns2.png" style="max-width:30%; height:auto;">
-        <img src="assets/img/project//nerdit/sns3.png" style="max-width:30%; height:auto;">
+        <img src="assets/img/project/gyumongeats/transaction1.png" style="max-width:49%; height:auto;">
+        <img src="assets/img/project/gyumongeats/transaction2.png" style="max-width:50%; height:auto;">
 
       </div>
     </section><!-- End Portfolio Details Section -->
@@ -239,15 +246,13 @@
       <div class="container">
 
         <div class="portfolio-description">
-          <h2>2. Auth Guard 구현</h2>
+          <h2>2. AWS Elastic Beanstalk 배포</h2>
           <p>
-            컨트롤러를 통해 들어오는 요청에 Guard를 걸어놓아 api를 요청하는 유저가 api를 요청할 자격이 있는지, 또는 유효한 유저인지 판별합니다.</br>
-            미들웨어를 사용할 수도 있지만, 미들웨어는 next()이후로 어떤 핸들러가 실행될지 모르기 때문에 이 단점을 보완한 가드를 적용했습니다.</br>
-            코드 : <a href="https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/auth/guards/jwt-auth.guard.ts" style="color: blue;">https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/auth/guards/jwt-auth.guard.ts</a>
+            처음에는 zip파일로 프로젝트를 압축하고 aws 콘솔에서 zip파일을 등록하여 직접 배포했습니다.</br>
+            매번 압축하고 직접 등록해야한다는 배포 방식에 불편함을 느껴 eb cli라는 도구를 이용하여 작업하던 프로젝트에서 바로 배포할 수 있도록 재구성했습니다.</br>
           </p>
         </div>
 
-        <img src="assets/img/project//nerdit/guard1.png" style="max-width:40%; height:auto;">
         <!-- <img src="assets/img/project//nerdit/sns2.png" style="max-width:30%; height:auto;">
         <img src="assets/img/project//nerdit/sns3.png" style="max-width:30%; height:auto;"> -->
 
@@ -259,58 +264,16 @@
       <div class="container">
 
         <div class="portfolio-description">
-          <h2>3. TypeORM을 활용한 Entity 관리</h2>
+          <h2>3. 프로젝트를 통해 개인적으로 느낀 점</h2>
           <p>
-            entities 폴더에 각 테이블의 정보가 담긴 object를 생성하였습니다.</br>
-            orm으로 만든 객체를 활용해 객체지향적인 코드를 구성할 수 있었고, 쿼리 작성이나 데이터 관리에 대한 시간을 단축시켜 빠르게 구현할 수 있었습니다.</br>
-            코드 : <a href="https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/entities/user.entity.ts" style="color: blue;">https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/entities/user.entity.ts</a>
-          </p>
-        </div>
-
-        <img src="assets/img/project/nerdit/orm.png" style="max-width:40%; height:auto;">
-        <!-- <img src="assets/img/project//nerdit/sns2.png" style="max-width:30%; height:auto;">
-        <img src="assets/img/project//nerdit/sns3.png" style="max-width:30%; height:auto;"> -->
-
-      </div>
-    </section><!-- End Portfolio Details Section -->
-
-    <!-- ======= 상세 부분 4 ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="portfolio-description">
-          <h2>4. Docker 이미지 생성 후 테스트용 서버 배포</h2>
-          <p>
-            Docker를 사용하기 전, 프론트에서 서버를 실행하기 위해 DB나 Node.js의 버전에 맞게 환경을 구축해야했지만,</br>
-            이번 프로젝트에서는 Docker 사용하여 프론트엔드 개발자 분들이 백엔드 환경을 따로 구축하지 않아도 사용 가능한 환경을 제공했습니다.</br>
-            간단한 파일 작성으로 쉽게 환경을 제공할 수 있고 pull하기만하면 쉽게 사용할 수 있다는 장점을 알았습니다.</br>
-            코드 : <a href="https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/docker-compose.test.yml" style="color: blue;">https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/docker-compose.test.yml</a>
+            로컬에서 로그인 테스트했을땐 쿠키의 전달을 확인할 수 있었지만, 배포하고 나서의 쿠키는 전달되지 않았습니다.</br>
+            단순 로그인 처리에 대해 문제가 있었다고 생각했지만 로컬과 달리 실제 배포 환경에서는, 보안에 관한 여러 정책들이 존재했고 쿠키를 처리하고 싶으면 설정을 따로 해둬야한다는 것을 알았습니다.</br>
+            실제로 프로젝트를 배포할 때는 다양한 보안 정책에 신경쓰면서 기능을 구현해야하고, 로컬 환경과 배포 환경은 매우 다르다는 것을 이 프로젝트를 통해 알 수 있었습니다.
           </p>
         </div>
 
         <!-- <img src="assets/img/project//nerdit/sns2.png" style="max-width:30%; height:auto;">
         <img src="assets/img/project//nerdit/sns3.png" style="max-width:30%; height:auto;"> -->
-
-      </div>
-    </section><!-- End Portfolio Details Section -->
-
-    <!-- ======= 상세 부분 5 ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="portfolio-description">
-          <h2>5. DTO를 활용하여 클라이언트와 서버 간 데이터 유효성 검사</h2>
-          <p>
-            express에서는 클라이언트로부터 body 데이터를 받으면, controller에서 필요없거나 유효한 데이터가 있는지 검사하는 로직을 직접 구현해야합니다.</br>
-            매번 구현하는 것은 비효율적이므로 DTO class를 만들어주었고, Nest.js에서 추천하는 class-validator라는 모듈로 DTO 유효성을 검사했습니다.</br>
-            client요청이 controller에 바로 전달되기전 검사해야하므로 서버 애플리케이션 전체에 validation pipe를 설정해두었습니다. </br>
-            코드 : <a href="https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/user/dto/create-user.dto.ts" style="color: blue;">https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/user/dto/create-user.dto.ts</a>
-          </p>
-        </div>
-        
-        <img src="assets/img/project/nerdit/dto2.png" style="max-width:70%; height:auto;">
-        <img src="assets/img/project/nerdit/dto1.png" style="max-width:30%; height:auto;">
-        <!-- <img src="assets/img/project//nerdit/sns3.png" style="max-width:30%; height:auto;"> -->
 
       </div>
     </section><!-- End Portfolio Details Section -->
