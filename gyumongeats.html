@@ -207,7 +207,7 @@
       </div>
     </section><!-- End Portfolio Details Section -->
 
-    <!-- ======= 상세 부분 1 ======= -->
+    <!-- ======= 프로젝트 content ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
@@ -215,7 +215,7 @@
           <div class="col-sm-12">
             <div class="title-box text-center">
               <h3 class="title-a">
-                Project main skill
+                Project Content
               </h3>
               <p class="subtitle-a">
                 프로젝트에 구현한 주요 기능입니다.
@@ -225,55 +225,113 @@
           </div>
         </div>
 
-        <div class="portfolio-description">
-          <h2>1. Transaction을 사용하여 여러 연산 처리</h2>
-          <p>
-            어플에서 주문할 때 여러 DB 연산이 필요했었는데, 만약 어떤 오류 때문에 주문을 실패하는 현상이 발생하면 이전에 처리했던 DB 연산을 rollback시킬 필요가 있었습니다.</br>
-            학교에서 데이터베이스 이론 시간에 배운 transaction이라는 개념이 떠올랐고 그 개념을 프로젝트에 바로 적용시켜 처리할 수 있었습니다.</br></br>
-            이용자가 사전에 미리 담아둔 장바구니 목록을 OrderingMenu라는 테이블에 담고, 주문 정보를 새로 생성할 수 있도록 처리했습니다.</br>
-            코드 : <a href="https://github.com/jiho5993/gyumongeats/blob/master/back/routes/api/order/order.controller.js#L9" style="color: blue;">https://github.com/jiho5993/gyumongeats/blob/master/back/routes/api/order/order.controller.js#L9</a>
-          </p>
+        <!-- 프로젝트 정보 -->
+        <div class="portfolio-info">
+          <h3># 실제 서비스 사용을 위한 기능 구현</h3>
+          <ul>
+            <li>* 유저 로그인, 음식점 조회, 주문 등</li>
+          </ul>
+          </br>
+          <h3># Transaction을 사용하여 여러 연산 처리</h3>
+          <ul>
+            <li>* 주문 api같은 여러 DB 연산이 들어가는 기능에는 Tranasction으로 처리했습니다.</li>
+          </ul>
+          </br>
+          <h3># AWS Elastic Beanstalk 배포</h3>
+          <ul>
+            <li>* eb cli로 프로젝트를 손쉽게 배포했습니다.</li>
+          </ul>
+          </br>
         </div>
-
-        <img src="assets/img/project/gyumongeats/transaction1.png" style="max-width:49%; height:auto;">
-        <img src="assets/img/project/gyumongeats/transaction2.png" style="max-width:50%; height:auto;">
 
       </div>
     </section><!-- End Portfolio Details Section -->
 
-    <!-- ======= 상세 부분 2 ======= -->
+    <!-- ======= 프로젝트 issue title ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
-        <div class="portfolio-description">
-          <h2>2. AWS Elastic Beanstalk 배포</h2>
-          <p>
-            처음에는 zip파일로 프로젝트를 압축하고 aws 콘솔에서 zip파일을 등록하여 직접 배포했습니다.</br>
-            매번 압축하고 직접 등록해야한다는 배포 방식에 불편함을 느껴 eb cli라는 도구를 이용하여 작업하던 프로젝트에서 바로 배포할 수 있도록 재구성했습니다.</br>
-          </p>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Issue
+              </h3>
+              <p class="subtitle-a">
+                프로젝트를 진행하면서 발생한 이슈입니다.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
         </div>
-
-        <!-- <img src="assets/img/project//nerdit/sns2.png" style="max-width:30%; height:auto;">
-        <img src="assets/img/project//nerdit/sns3.png" style="max-width:30%; height:auto;"> -->
 
       </div>
     </section><!-- End Portfolio Details Section -->
 
-    <!-- ======= 상세 부분 3 ======= -->
+    <!-- ======= issue 1 ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
         <div class="portfolio-description">
-          <h2>3. 프로젝트를 통해 개인적으로 느낀 점</h2>
+          <h2>1. 배포 후 쿠키가 전달되지 않는 점</h2>
           <p>
-            로컬에서 로그인 테스트했을땐 쿠키의 전달을 확인할 수 있었지만, 배포하고 나서의 쿠키는 전달되지 않았습니다.</br>
-            단순 로그인 처리에 대해 문제가 있었다고 생각했지만 로컬과 달리 실제 배포 환경에서는, 보안에 관한 여러 정책들이 존재했고 쿠키를 처리하고 싶으면 설정을 따로 해둬야한다는 것을 알았습니다.</br>
-            실제로 프로젝트를 배포할 때는 다양한 보안 정책에 신경쓰면서 기능을 구현해야하고, 로컬 환경과 배포 환경은 매우 다르다는 것을 이 프로젝트를 통해 알 수 있었습니다.
+            * 문제점</br>
+            로컬 환경에서 잘 작동하던 쿠키 기능이 배포 후 잘 전달되지 않는 문제가 발생했습니다.</br></br>
+
+            * 해결 과정</br>
+            쿠키 기반의 데이터는 CORS와 SameSite 정책때문에 기능이 잘 작동되지 않는다는 것을 알았습니다.</br></br>
+
+            * 해결 방법</br>
+            백엔드에서 CORS 설정과 Cookie에 대한 옵션을 더 추가하여 해결했습니다.</br></br>
+
+            코드 : <a href="https://github.com/jiho5993/gyumongeats/blob/master/back/app.js" style="color: blue;">https://github.com/jiho5993/gyumongeats/blob/master/back/app.js</a>
           </p>
         </div>
 
-        <!-- <img src="assets/img/project//nerdit/sns2.png" style="max-width:30%; height:auto;">
-        <img src="assets/img/project//nerdit/sns3.png" style="max-width:30%; height:auto;"> -->
+        <img src="assets/img/project/gyumongeats/cookie.png" style="max-width:70%; height:auto;">
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+    <!-- ======= 느낀 점 ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                느낀 점
+              </h3>
+              <p class="subtitle-a">
+                프로젝트를 진행하면서 느낀 부분을 적었습니다.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 느낀 점 리스트 -->
+        <div class="portfolio-info">
+          <ul>
+            <li>
+              1. 로컬에서 로그인 테스트했을땐 쿠키의 전달을 확인할 수 있었지만, 배포하고 나서의 쿠키는 전달되지 않았습니다.</br>
+              단순 로그인 처리에 대해 문제가 있었다고 생각했지만 로컬과 달리 실제 배포 환경에서는, 보안에 관한 여러 정책들이 존재했고 쿠키를 처리하고 싶으면 설정을 따로 해둬야한다는 것을 알았습니다.</br>
+              <strong>로컬의 환경과 배포의 환경은 다르다는 것을 알 수 있었습니다.</strong>
+            </li>
+            <h3></h3>
+            <li>
+              2. <strong>필요한 기능을 쓰려면 그에 대한 이론이 중요하다는 것을 알았습니다.</strong></br>
+              transaction 같은 개념은 학교에서 배운 데이터베이스 이론 시간에 떠올릴 수 있었습니다.</br>
+              만약 transaction을 몰랐다면 매번 DB 연산에 대한 rollback을 직접 처리했을 거라고 생각하니 이론이 그만큼 중요하다는 것을 깨달았습니다.</br>
+            </li>
+            <h3></h3>
+            <li>
+              3. 로그인 처리를 잘 못했음 (access token, refresh token)
+              <a href="https://github.com/jiho5993/gyumongeats/blob/master/back/routes/middleware/auth.js#L4" style="color: blue;">링크</a>
+            </li>
+          </ul>
+        </div>
 
       </div>
     </section><!-- End Portfolio Details Section -->
