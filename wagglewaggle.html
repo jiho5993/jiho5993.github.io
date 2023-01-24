@@ -139,6 +139,63 @@
                     </div>
                   </div>
                 </div>
+                <!-- cron time -->
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <span class="ico-circle"><i><img src="assets/img/logo/nestjs.svg" style="height: 80px;"></i></span>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">Cron Job</h2>
+                      <p class="s-description text-center">
+                        Nest.JS에서 모듈로 제공하는 Cron Job을 사용하여 스케줄러 서버를 구축하였습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- yarn berry -->
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <span class="ico-circle"><i><img src="assets/img/logo/yarn.png" style="height: 65px;"></i></span>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">Yarn Berry</h2>
+                      <p class="s-description text-center">
+                        의존성을 node_modules이라는 폴더로 관리할 수 있지만, 검색하는 비용이 비효율적이고, 의존성이 중복으로 생성되거나 불필요한 형태로 남아 있을 수도 있습니다.</br>
+                        성능 저하를 불러일으킬 수 있기 때문에 이를 해결할 수 있는 yarn berry를 사용하였습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- sentry & slack -->
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <i><img src="assets/img/logo/sentry.png" style="height: 80px;"></i><i><img src="assets/img/logo/slack.png" style="height: 80px;"></i>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">Sentry & Slack</h2>
+                      <p class="s-description text-center">
+                        sentry와 slack을 scheduler 서버에 적용하여 작업에 예기치 않게 오류가 발생하면 해당 에러를 빠르게 파악할 수 있도록 했습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- pm2 -->
+                <!-- <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <span class="ico-circle"><i><img src="assets/img/logo/pm2.png" style="height: 60px;"></i></span>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">pm2</h2>
+                      <p class="s-description text-center">
+
+                      </p>
+                    </div>
+                  </div>
+                </div> -->
               </div>
             </div>
           </section>
@@ -170,17 +227,15 @@
 
         <!-- 프로젝트 정보 -->
         <div class="portfolio-info">
-          <h3># 소셜 로그인 구현</h3>
+          <h3># API 서버와 Scheduler 서버를 Monorepo로 구성</h3>
           <ul>
-            <li>* Kakao, Naver, Google 플랫폼에서 제공하는 REST API를 이용하여 구현했습니다.</li>
-            <li>* 각 플랫폼에서 얻은 유저 정보를 JWT로 만들어 관리하였습니다.</li>
-            <li>* 유저가 API를 요청할 때 유효한 유저인지 판별하기 위해 Guard를 사용하여 API를 보호했습니다.</li>
+            <li>* Monorepo를 사용하여 데이터를 주기적으로 요청하는 Scheduler 서버, 프론트엔드에 정제된 데이터를 제공할 API 서버를 만들었습니다.</li>
+            <li>* 각 서버는 같은 config와 entity를 사용하기 때문에, Library를 만들어 중복해서 구성하는 작업을 없앨 수 있었습니다.</li>
           </ul>
           </br>
-          <h3># Pipe를 통한 데이터 유효성 검사</h3>
+          <h3># Cron Job을 사용한 Scheduler 서버 구축</h3>
           <ul>
-            <li>* 클라이언트의 요청이 왔을 때, 해당 controller에 대한 데이터를 처리했습니다.</li>
-            <li>* DTO와 class-validator를 활용하여 타입을 체킹했습니다.</li>
+            <li>* 해당 프로젝트는 kt, skt가 제공하는 실시간 인구 혼잡도 데이터를 주기적으로 가져올 필요가 있었습니다.</li>
           </ul>
           </br>
           <h3># TypeORM을 활용한 엔티티 관리</h3>
