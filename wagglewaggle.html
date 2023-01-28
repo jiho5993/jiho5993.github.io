@@ -230,26 +230,27 @@
           <h3># API 서버와 Scheduler 서버를 Monorepo로 구성</h3>
           <ul>
             <li>* Monorepo를 사용하여 데이터를 주기적으로 요청하는 Scheduler 서버, 프론트엔드에 정제된 데이터를 제공할 API 서버를 만들었습니다.</li>
-            <li>* 각 서버는 같은 config와 entity를 사용하기 때문에, Library를 만들어 중복해서 구성하는 작업을 없앨 수 있었습니다.</li>
+            <li>* 각 서버는 같은 config와 entity를 사용하기 때문에 Library를 만들어, 반복되는 작업을 없앨 수 있었습니다.</li>
           </ul>
           </br>
           <h3># Cron Job을 사용한 Scheduler 서버 구축</h3>
           <ul>
             <li>* 해당 프로젝트는 kt, skt가 제공하는 실시간 인구 혼잡도 데이터를 주기적으로 가져올 필요가 있었습니다.</li>
+            <li>* 사용자가 요청할 때마다 매번 api를 요청할 수 없으므로 Scheduler 서버를 구축하였습니다.</li>
+            <li>* 서버를 분리한 덕에 목적에 맞는 프로그래밍이 가능할 수 있었고, 배포나 서버 관리가 수월했습니다.</li>
           </ul>
           </br>
-          <h3># TypeORM을 활용한 엔티티 관리</h3>
+          <h3># migration 기능을 활용한 DB 관리</h3>
           <ul>
-            <li>* DB erd 설계 후 엔티티를 생성하여 DB를 관리했습니다.</li>
-          </ul>
-          </br>
-          <h3># AWS S3로 프로필 이미지 관리</h3>
-          <h3># Docker로 테스트용 서버 배포</h3>
-          <ul>
-            <li>* 프론트엔드 개발자 분들이 백엔드 환경을 구축하지 않아도 사용 가능한 환경을 제공했습니다.</li>
+            <li>* 개발 단계에서 synchronize 설정을 키면 되지만, 이 방법은 기존 데이터가 전부 삭제되고 새로 테이블을 만드는 방법이라 배포시에는 안전한 방법이 필요했습니다.</li>
+            <li>* 개발하면서 entity의 수정은 계속 발생하기 때문에 migration을 통해 기존 데이터는 보존하고 스키마를 업데이트 할 수 있었습니다.</li>
           </ul>
           </br>
           <h3># API 문서 작성</h3>
+          <ul>
+            <li>* readme.io 사이트에서 제작했습니다.</li>
+            <li>* 테스트를 위한 request, response 전용 칸이 있어 문서를 읽는 프론트엔드 개발자 분이 쉽게 개발 할 수 있는 환경을 제공했습니다.</li>
+          </ul>
         </div>
 
       </div>
@@ -281,17 +282,17 @@
       <div class="container">
 
         <div class="portfolio-description">
-          <h2>1. 소셜 로그인</h2>
+          <h2>1. Scheduler 서버 에러 핸들링</h2>
           <p>
             * 문제점</br>
-            소셜 로그인을 도입하기 위해 passport라는 모듈을 활용해 도입했지만, 실제로는 서버의 응답 데이터가 사라지는 현상이 발생했습니다.</br></br>
+            Scheduler 서버는 데이터를 가져오고 DB에 담는 중요한 서버기 때문에 어떤 오류가 발생할지 모르고 그에 대한 대응이 필요했습니다.</br>
+            하지만, 매번 인스턴스 콘솔에 들어가 로그를 확인하는 방식은 빠른 대응을 할 수 없다는 단점이 있어 에러를 반환해주는 알림 시스템이 필요했습니다.</br></br>
 
             * 해결 과정</br>
-            소셜 로그인이라는 기술 자체가 어떤 흐름을 가지고 있고, 구현에 있어서 무엇이 필요한지 이해해야 도입할 수 있을거라 생각했습니다.</br>
-            passport-kakao가 실제로 돌아가는 로직을 살펴봤더니 REST API를 활용한 로직임을 알 수 있었습니다.</br></br>
+            </br></br>
 
             * 해결 방법</br>
-            passport 모듈은 사용하지 않고 REST API를 통해 직접 구현했습니다.</br></br>
+            </br></br>
 
             코드 : <a href="https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/auth/auth.service.ts#L72" style="color: blue;">https://github.com/DCPT-KNP/NerdIT-Backend/blob/main/src/auth/auth.service.ts#L72</a>
           </p>
