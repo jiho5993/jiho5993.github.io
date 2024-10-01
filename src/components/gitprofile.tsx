@@ -29,7 +29,7 @@ import GithubProjectCard from './github-project-card';
 import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
 import Footer from './footer';
-import PublicationCard from './publication-card';
+import CompanyPerformanceCard from './company-performance-card';
 
 /**
  * Renders the GitProfile component.
@@ -256,10 +256,12 @@ const GitProfile = ({ config }: { config: Config }) => {
                         googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
                       />
                     )}
-                    {sanitizedConfig.publications.length !== 0 && (
-                      <PublicationCard
+                    {sanitizedConfig.companyPerformances.length !== 0 && (
+                      <CompanyPerformanceCard
                         loading={loading}
-                        publications={sanitizedConfig.publications}
+                        companyPerformances={
+                          sanitizedConfig.companyPerformances
+                        }
                       />
                     )}
                     {sanitizedConfig.projects.external.projects.length !==

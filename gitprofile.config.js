@@ -135,7 +135,7 @@ const CONFIG = {
       to: '2018',
     },
   ],
-  publications: [
+  companyPerformances: [
     {
       title: '@nestjs/throttler를 활용한 유저별 Rate Limit 적용',
       conferenceName: 'Nest.js / Throttler / Redis',

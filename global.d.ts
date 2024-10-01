@@ -237,7 +237,7 @@ interface Education {
   to: string;
 }
 
-interface Publication {
+interface CompanyPerformance {
   title: string;
   conferenceName?: string;
   journalName?: string;
@@ -405,9 +405,9 @@ interface Config {
   educations?: Array<Education>;
 
   /**
-   * Publication list
+   * CompanyPerformance list
    */
-  publications?: Array<Publication>;
+  companyPerformances?: Array<CompanyPerformance>;
 
   /**
    * Resume

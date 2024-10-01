@@ -92,7 +92,7 @@ export interface SanitizedEducation {
   to: string;
 }
 
-export interface SanitizedPublication {
+export interface SanitizedCompanyPerformance {
   title: string;
   conferenceName?: string;
   journalName?: string;
@@ -147,7 +147,7 @@ export interface SanitizedConfig {
   experiences: Array<SanitizedExperience>;
   educations: Array<SanitizedEducation>;
   awardsHistories: Array<SanitizedAwardsHistory>;
-  publications: Array<SanitizedPublication>;
+  companyPerformances: Array<SanitizedCompanyPerformance>;
   googleAnalytics: SanitizedGoogleAnalytics;
   hotjar: SanitizedHotjar;
   blog: SanitizedBlog;

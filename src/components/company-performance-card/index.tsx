@@ -1,17 +1,17 @@
 import { Fragment } from 'react';
-import { SanitizedPublication } from '../../interfaces/sanitized-config';
+import { SanitizedCompanyPerformance } from '../../interfaces/sanitized-config';
 import { skeleton } from '../../utils';
 
-const PublicationCard = ({
-  publications,
+const CompanyPerformanceCard = ({
+  companyPerformances,
   loading,
 }: {
-  publications: SanitizedPublication[];
+  companyPerformances: SanitizedCompanyPerformance[];
   loading: boolean;
 }) => {
   const renderSkeleton = () => {
     const array = [];
-    for (let index = 0; index < publications.length; index++) {
+    for (let index = 0; index < companyPerformances.length; index++) {
       array.push(
         <div className="card shadow-lg compact bg-base-100" key={index}>
           <div className="p-8 h-full w-full">
@@ -73,8 +73,8 @@ const PublicationCard = ({
     return array;
   };
 
-  const renderPublications = () => {
-    return publications.map((item, index) => (
+  const renderCompanyPerformances = () => {
+    return companyPerformances.map((item, index) => (
       <div
         className="card shadow-lg compact bg-base-100 cursor-pointer"
         key={index}
@@ -140,7 +140,7 @@ const PublicationCard = ({
                 </div>
                 <div className="col-span-2">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {loading ? renderSkeleton() : renderPublications()}
+                    {loading ? renderSkeleton() : renderCompanyPerformances()}
                   </div>
                 </div>
               </div>
@@ -152,4 +152,4 @@ const PublicationCard = ({
   );
 };
 
-export default PublicationCard;
+export default CompanyPerformanceCard;
