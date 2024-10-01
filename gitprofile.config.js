@@ -137,22 +137,37 @@ const CONFIG = {
   ],
   publications: [
     {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      title: '@nestjs/throttler를 활용한 유저별 Rate Limit 적용',
+      conferenceName: 'Nest.js / Throttler / Redis',
+      journalName: '(헥슬란트)',
+      authors: '',
+      link: '',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        '유저에게 서비스를 제공할 때 API 형태로 제공하게 되는 경우가 있는데, 이 때 Rate Limit을 적용하여 과도한 요청이 들어오는 것을 방지할 수 있습니다.\n\n' +
+        'Nest.js에서 제공하는 @nestjs/throttler와 Redis를 이용하여, Rate Limit 시스템을 구축하였습니다.\n\n' +
+        '유저 별로 Rate Limit을 적용하고자 했기 때문에, Redis의 Key를 유저 별로 구분하여 Rate Limit을 적용하였습니다.',
     },
     {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      title: '웹 소켓을 활용한 RPC 통신 성능 개선',
+      conferenceName: 'Web Socket / RPC / Performance',
+      journalName: '(헥슬란트)',
+      authors: '',
+      link: '',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        '블록체인 노드가 제공하는 RPC 통신을 사용하여, 입출금을 지원하는 서비스를 주로 운영하고 있습니다.\n' +
+        '이때 RPC 통신은 HTTP 통신을 사용하게 되는데, handshake 과정이 매번 발생하여 매번 통신 요청을 해야 했고, 이로 인해 성능이 떨어지는 문제가 있었습니다.\n\n' +
+        '이를 해결하기 위해 시스템에 맞는 웹 소켓 헬퍼를 구현하였고,\n불필요한 handshake 과정을 줄여 커넥션 한번으로 비약적인 성능 향상을 이루었습니다.',
+    },
+    {
+      title: '블록체인 RPC를 활용한 자산 입출금 서비스 개발',
+      conferenceName: 'Blockchain / RPC',
+      journalName: '(헥슬란트)',
+      authors: '',
+      link: '',
+      description:
+        '블록체인 개발 도구를 제공하는 서비스를 운영하기 때문에, 비트코인이나 이더리움 같은 자산 입출금을 지원하는 서비스를 개발하였습니다.\n' +
+        '구축하려는 블록체인 네트워크의 개발 문서를 읽고, RPC 통신을 통해 입출금 서비스를 개발하였습니다.\n\n' +
+        '스스로 리서치하여 개발해야했기 때문에 시행착오를 겪었지만, 디스코드나 슬랙을 통해 다른 개발자와 소통하며 문제를 해결하는 능력을 기를 수 있었습니다.',
     },
   ],
   // Display articles from your medium or dev account. (Optional)

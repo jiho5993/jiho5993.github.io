@@ -75,11 +75,11 @@ const PublicationCard = ({
 
   const renderPublications = () => {
     return publications.map((item, index) => (
-      <a
+      <div
         className="card shadow-lg compact bg-base-100 cursor-pointer"
         key={index}
-        href={item.link}
-        target="_blank"
+        // href={item.link}
+        // target="_blank"
         rel="noreferrer"
       >
         <div className="p-8 h-full w-full">
@@ -104,7 +104,10 @@ const PublicationCard = ({
                     </p>
                   )}
                   {item.description && (
-                    <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
+                    <p
+                      className="mt-2 text-base-content text-opacity-60 text-sm text-justify"
+                      style={{ whiteSpace: 'pre-wrap' }}
+                    >
                       {item.description}
                     </p>
                   )}
@@ -113,7 +116,7 @@ const PublicationCard = ({
             </div>
           </div>
         </div>
-      </a>
+      </div>
     ));
   };
 
@@ -130,7 +133,7 @@ const PublicationCard = ({
                       skeleton({ widthCls: 'w-40', heightCls: 'h-8' })
                     ) : (
                       <span className="text-base-content opacity-70">
-                        Publications
+                        주요 성과 및 얻은 것
                       </span>
                     )}
                   </h5>
