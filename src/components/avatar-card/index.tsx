@@ -7,7 +7,6 @@ interface AvatarCardProps {
   profile: Profile | null;
   loading: boolean;
   avatarRing: boolean;
-  resumeFileUrl?: string;
   description?: string;
 }
 
@@ -23,7 +22,6 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
   profile,
   loading,
   avatarRing,
-  resumeFileUrl,
   description,
 }): JSX.Element => {
   return (
