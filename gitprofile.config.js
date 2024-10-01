@@ -52,7 +52,7 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: '박지호 | Back-end Developer',
     description: '',
     imageURL: '',
   },
@@ -82,12 +82,14 @@ const CONFIG = {
     fileUrl:
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
+  description:
+    '클라이밍 하듯이 떨어져도 다시 오르고\n더 높은 곳으로 올라가고자 하는 백엔드 개발자입니다.\n클라이밍처럼 문제를 하나씩 해결하며 성장하는 과정을 즐깁니다.',
   skills: [
-    './src/assets/img/logo/nodejs.png',
-    './src/assets/img/logo/javascript.png',
-    './src/assets/img/logo/typescript.svg',
-    './src/assets/img/logo/nestjs.svg',
-    './src/assets/img/logo/typeorm.png',
+    './img/logo/nodejs.png',
+    './img/logo/javascript.png',
+    './img/logo/typescript.svg',
+    './img/logo/nestjs.svg',
+    './img/logo/typeorm.png',
   ],
   experiences: [
     {

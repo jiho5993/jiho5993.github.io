@@ -375,6 +375,11 @@ interface Config {
   seo?: SEO;
 
   /**
+   * My Description Config
+   */
+  description?: string;
+
+  /**
    * Social links
    */
   social?: Social;
