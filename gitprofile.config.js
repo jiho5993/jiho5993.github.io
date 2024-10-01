@@ -29,24 +29,38 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'My Projects',
+      header: '프로젝트',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          title: '와글와글 (WaggleWaggle)',
+          description: '인구 혼잡도 제공 서비스',
+          imageUrl: './img/project/wagglewaggle-main.png',
+          link: '/projects/wagglewaggle',
         },
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          title: 'NerdIT',
+          description: '디자이너들을 위한 자기계발 서비스',
+          imageUrl: './img/project/nerdit-main.png',
+          link: '/projects/nerdit',
+        },
+        {
+          title: '영화 추천 챗봇 서비스',
+          description: '',
+          imageUrl: './img/project/movie-chatbot.jpg',
+          link: 'https://jiho5993.notion.site/11214d25e71c80319b78d5c3e96801c0',
+        },
+        {
+          title: '규몽이츠 (Gyumongeats)',
+          description: '쿠팡이츠 클론',
+          imageUrl: './img/project/gyumongeats-main.png',
+          link: 'https://jiho5993.notion.site/Gyumongeats-11214d25e71c805a9336fe758a1b2704',
+        },
+        {
+          title: '채팅 웹 어플리케이션',
+          description: '',
+          imageUrl: './img/project/chat.png',
+          link: 'https://jiho5993.notion.site/11214d25e71c80d58f69c0a0a2a51ec8',
         },
       ],
     },
