@@ -27,7 +27,6 @@ import AwardsHistoryCard from './awards-history-card';
 import { GithubProject } from '../interfaces/github-project';
 import GithubProjectCard from './github-project-card';
 import ExternalProjectCard from './external-project-card';
-import BlogCard from './blog-card';
 import CompanyPerformanceCard from './company-performance-card';
 
 /**
@@ -274,13 +273,13 @@ const GitProfile = ({ config }: { config: Config }) => {
                         googleAnalyticId={sanitizedConfig.googleAnalytics.id}
                       />
                     )}
-                    {sanitizedConfig.blog.display && (
-                      <BlogCard
-                        loading={loading}
-                        googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
-                        blog={sanitizedConfig.blog}
-                      />
-                    )}
+                    {/*{sanitizedConfig.blog.display && (*/}
+                    {/*  <BlogCard*/}
+                    {/*    loading={loading}*/}
+                    {/*    googleAnalyticsId={sanitizedConfig.googleAnalytics.id}*/}
+                    {/*    blog={sanitizedConfig.blog}*/}
+                    {/*  />*/}
+                    {/*)}*/}
                   </div>
                 </div>
               </div>
