@@ -90,3 +90,7 @@ svg {
     opacity: 1;
   }
 }
+
+.can-mouse-hover:hover {
+  background: #e0e0e0;
+}

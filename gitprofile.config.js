@@ -29,36 +29,40 @@ const CONFIG = {
       },
     },
     external: {
-      header: '프로젝트',
+      header: '프로젝트\n(클릭시 자세한 설명을 볼 수 있습니다)',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
           title: '와글와글 (WaggleWaggle)',
-          description: '인구 혼잡도 제공 서비스',
+          description:
+            'SKT, KT에서 제공하는 인구 혼잡도 기능을 이용하여, 서울 지역의 실시간 인구 혼잡도를 제공하는 서비스입니다.',
           imageUrl: './img/project/wagglewaggle-main.png',
-          link: '/projects/wagglewaggle',
+          link: 'https://jiho5993.notion.site/WaggleWaggle-11314d25e71c800eb2d4ce8c5cab94e1?pvs=25',
         },
         {
           title: 'NerdIT',
-          description: '디자이너들을 위한 자기계발 서비스',
+          description:
+            '자기개발을 꾸준히 하지만, 중도 포기하거나 어떻게 해야 할지 모르는 디자이너들을 위해 제작하였습니다.',
           imageUrl: './img/project/nerdit-main.png',
-          link: '/projects/nerdit',
+          link: 'https://jiho5993.notion.site/NerdIT-11314d25e71c8078b525fd3f80fe4706',
         },
         {
           title: '영화 추천 챗봇 서비스',
-          description: '',
+          description:
+            '대학 졸업 작품으로 진행한 “영화 추천 챗봇 서비스”를 제작하였습니다.',
           imageUrl: './img/project/movie-chatbot.jpg',
           link: 'https://jiho5993.notion.site/11214d25e71c80319b78d5c3e96801c0',
         },
         {
           title: '규몽이츠 (Gyumongeats)',
-          description: '쿠팡이츠 클론',
+          description: '배달 어플 “쿠팡이츠”를 클론한 토이 프로젝트입니다.',
           imageUrl: './img/project/gyumongeats-main.png',
           link: 'https://jiho5993.notion.site/Gyumongeats-11214d25e71c805a9336fe758a1b2704',
         },
         {
           title: '채팅 웹 어플리케이션',
-          description: '',
+          description:
+            '대학 오픈소스 프로젝트 과제 중 웹 소켓을 사용한 채팅 웹 어플리케이션을 제작하였습니다.',
           imageUrl: './img/project/chat.png',
           link: 'https://jiho5993.notion.site/11214d25e71c80d58f69c0a0a2a51ec8',
         },

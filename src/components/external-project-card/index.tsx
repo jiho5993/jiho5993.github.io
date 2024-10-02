@@ -69,7 +69,7 @@ const ExternalProjectCard = ({
   const renderExternalProjects = () => {
     return externalProjects.map((item, index) => (
       <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
+        className="card shadow-lg compact bg-base-100 cursor-pointer can-mouse-hover"
         key={index}
         href={item.link}
         onClick={(e) => {
@@ -85,7 +85,7 @@ const ExternalProjectCard = ({
             console.error(error);
           }
 
-          window?.open(item.link, '_blank');
+          window?.open(item.link, '_self');
         }}
       >
         <div className="p-8 h-full w-full">
@@ -135,7 +135,10 @@ const ExternalProjectCard = ({
                     {loading ? (
                       skeleton({ widthCls: 'w-40', heightCls: 'h-8' })
                     ) : (
-                      <span className="text-base-content opacity-70">
+                      <span
+                        className="text-base-content opacity-70"
+                        style={{ whiteSpace: 'pre-wrap' }}
+                      >
                         {header}
                       </span>
                     )}
