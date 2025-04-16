@@ -1,0 +1,259 @@
+# Site
+repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: 박지호
+title: 백엔드 엔지니어
+email: jiho5993@gmail.com
+# email_title: 이메일
+phone: 010-2382-5993
+# phone_title: Phone (Phone title override)
+website: https://jiho5993.notion.site/f9fb3cb9721c4df093951e351a661c08
+# website_title: Web (Website title override)
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+# twitter_username: jekyllrb
+github_username: jiho5993
+# stackoverflow_username: '00000001'
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+instagram_username: park_j2h5
+# linkedin_username: jekyll
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: jekyll
+# orcid_username: 0000-0000-0000-0000
+# googlescholar_username: D847cGsAAAAJ
+
+# Additional icon links
+# additional_links:
+#   - title: Link name
+#     icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#     url: Link url (eg. https://google.com)
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me (Use this to override about section title)
+about_profile_image: images/pjh.jpg
+about_content: |
+  웹 백엔드 엔지니어로 개발한 경력이 있습니다.
+  느린 것보다 빠른 것을 더 좋아하고,
+  혼자 고민하는 것보다 같이 고민하는 것을 좋아합니다.
+  <mark>성능 개선 포인트</mark>나 <mark>유지 보수</mark>가 가능한 부분에 대해 적용한 경험이 있습니다.
+
+content:
+  - title: Experience
+    layout: list
+    content:
+      - layout: top-middle
+        title: 헥슬란트
+        sub_title: Backend Engineer
+        caption: 2022.10.31 - 2024.12.31
+        # link: https://hexlant.com/ko
+        quote: >
+          블록체인 코인 입출금 서비스 구축 및 입출금 내역 대시보드 API 개발
+        description: | # this will include new lines to allow paragraphs
+          - 유저별 API Rate Limit 시스템 구축 (👉 [링크](https://jiho5993.notion.site/API-Rate-Limit-15f14d25e71c8082886dc09771c5d57d?pvs=4))
+          - 웹 소켓을 활용한 RPC 통신 성능 개선 (👉 [링크](https://jiho5993.notion.site/Websocket-Helper-15714d25e71c80e1a6c2c00c6ebbca77?pvs=4))
+            - <mark>약 150초 → 약 53초로 3배 개선</mark>
+          - 코인 입출금 서비스 개발
+          - 입출금 현황을 확인할 수 있는 대시보드 API 개발
+          - 회계 / 세무 관련 정산 내역 발급 스케줄러 및 API 개발
+          - 계약 시스템화 기능 개발
+  - title: Project
+    layout: list
+    content:
+      - layout: left
+        title: WaggleWaggle
+        caption: 2022.11 ~ 2023.12
+        # link: 얜뭐지
+        # link_text: 이건 뭐지
+        additional_links:
+          - title: 👉 API Github</br>
+            icon: fab fa-github
+            url: https://github.com/wagglewaggle/waggle-api
+          - title: 👉 Scheduler Github</br>
+            icon: fab fa-github
+            url: https://github.com/wagglewaggle/waggle-population-scheduler
+          - title: 👉 Entity Github
+            icon: fab fa-github
+            url: https://github.com/wagglewaggle/waggle-entity
+        quote: >
+          인구 혼잡도 제공 서비스
+        description: | # this will include new lines to allow paragraphs
+          - 서버 개발 전담
+          - 혼잡도 API를 통해 일정 주기마다 혼잡도 정보를 가져와 DB에 저장하는 스케줄러 구현
+          - Error Level을 두어 Normal일 경우와 Fatal일 경우에 대한 로직 분기
+          - Sentry와 Slack을 도입하여 모니터링 시스템 구축
+          - 한 요청 Lifecycle에서 반복적으로 사용되는 객체를 전역으로 관리하여 <mark>공통 로직을 줄이고 성능 개선</mark> (👉 [링크](https://jiho5993.notion.site/1a714d25e71c80fa8d8dfde59f6a79e4#1a814d25e71c80889f7bfbfa9e7f4228))
+      - layout: left
+        title: 영화 추천 챗봇 서비스
+        caption: 2022.01 - 2022.06
+        # link: 얜뭐지
+        # link_text: 이건 뭐지
+        additional_links:
+          - title: 👉 API Github</br>
+            icon: fab fa-github
+            url: https://github.com/jiho5993/movchatbot/tree/main
+        quote: >
+          대학 졸업 작품으로 제작한 영화 추천 카카오 챗봇
+        description: |
+          - 서버 개발, 챗봇 시스템 구성
+          - 카카오 챗봇과 REST API를 활용하여 영화 추천 서비스 제공
+          - 크롤링을 병렬로 처리하여 성능 개선
+            - <mark>약 5배의 비약적인 성능으로 개선 (12초 → 약 2초)</mark> (👉 [링크](https://jiho5993.notion.site/1a714d25e71c80fa8d8dfde59f6a79e4#1a914d25e71c80b9b608c0b278c135ab))
+      - layout: left
+        title: NerdIT
+        caption: 2022.01 ~ 2022.10
+        # link: 얜뭐지
+        # link_text: 이건 뭐지
+        additional_links:
+          - title: 👉 API Github</br>
+            icon: fab fa-github
+            url: https://github.com/jiho5993/movchatbot/tree/main
+        quote: >
+          한 줄 요약
+        description: |
+          - 내용
+      - layout: left
+        title: Gyumongeats
+        caption: 2021.02 ~ 2021.06
+        # link: 얜뭐지
+        # link_text: 이건 뭐지
+        additional_links:
+          - title: 👉 API Github</br>
+            icon: fab fa-github
+            url: https://github.com/jiho5993/movchatbot/tree/main
+        quote: >
+          한 줄 요약
+        description: |
+          - 내용
+      - layout: left
+        title: 채팅 웹 어플리케이션
+        caption: 2019.04 ~ 2019.06
+        additional_links:
+          - title: 👉 API Github</br>
+            icon: fab fa-github
+            url: https://github.com/jiho5993/movchatbot/tree/main
+        quote: >
+          한 줄 요약
+        description: |
+          - 내용
+  - title: Skills
+    layout: list
+    content:
+      - layout: top-middle
+        quote: >
+          현재 업무에 사용중 혹은 사용했던 기술들입니다.
+      - layout: left
+        title: Backend
+        description: |
+          - NodeJS, ExpressJS, NestJS
+          - Typescript, Javascript
+          - MySQL, Redis, TypeORM, Sequelize
+          - NPM, Yarn Berry, PNPM
+      - layout: left
+        title: Tool
+        description: |
+          - Github, Git, GitKraken
+          - Jira, Notion
+          - ERDCloud, Postman
+          - Visual Studio Code, Webstorm, DataGrip
+          - Docker, Sentry, Slack
+          - AWS EC2, AWS RDS, AWS S3
+  - title: 대내외 활동
+    layout: list
+    content:
+      - layout: left
+        title: UMC 연합동아리
+        sub_title: 스터디원(4기) & 운영진(5기)
+        caption: 2023.03 - 2023.12
+        description: |
+          - 4기는 스터디원, 5기는 운영진으로 활동
+          - 5기
+            - 백엔드 파트 면접 준비
+            - 운영진으로서 스터디원 관리 및 스터디 진행
+      - layout: left
+        title: 한양대학교 ERICA 원곡고등학교 코딩 교육 봉사
+        sub_title: 스터디 멘토
+        caption: 2019.09 - 2019.12
+        description: |
+          - C언어의 기초와 알고리즘을 알려주는 코딩 교육 봉사
+          - 재귀함수에 대해 강의 진행
+      - layout: left
+        title: 한양대학교 ERICA C++ 알고리즘 스터디
+        sub_title: 스터디 멘토
+        caption: 2019.03 - 2019.06
+        description: |
+          - C++의 기초와 알고리즘을 알려주는 스터디
+          - 기초 문법과 STL에 대해 강의 진행
+  - title: Awards
+    layout: list
+    content:
+      - layout: left
+        title: SW창업아이디어톤 대상 (1위)
+        sub_title: 한양대학교 ERICA
+        caption: 2022.06.23 - 2022.06.24
+      - layout: left
+        title: HESH 해커톤 대상 (1위)
+        sub_title: 한양대학교 ERICA
+        caption: 2019.11.08 - 2019.11.10
+      - layout: left
+        title: HEPC 알고리즘 대회 우수상 (6위)
+        sub_title: 한양대학교 ERICA
+        caption: 2019.05.20
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: 한양대학교 ERICA
+        sub_title: 컴퓨터학부
+        caption: 2018.03 - 2025.08 (졸업예정)
+      - layout: left
+        title: 유신고등학교
+        caption: 2015.03 - 2018.02
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  [
+    'Gemfile',
+    'Gemfile.lock',
+    'node_modules',
+    'vendor/bundle/',
+    'vendor/cache/',
+    'vendor/gems/',
+    'vendor/ruby/',
+    'lib/',
+    'scripts/',
+    'docker-compose.yml',
+  ]
