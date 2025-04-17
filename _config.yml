@@ -9,53 +9,29 @@ version: 2
 name: 박지호
 title: 백엔드 엔지니어
 email: jiho5993@gmail.com
-# email_title: 이메일
 phone: 010-2382-5993
-# phone_title: Phone (Phone title override)
 website: https://jiho5993.notion.site/f9fb3cb9721c4df093951e351a661c08
-# website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-# twitter_username: jekyllrb
 github_username: jiho5993
-# stackoverflow_username: '00000001'
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
 instagram_username: park_j2h5
-# linkedin_username: jekyll
-# xing_username: jekyll
-# pinterest_username: jekyll
-# youtube_username: jekyll
-# orcid_username: 0000-0000-0000-0000
-# googlescholar_username: D847cGsAAAAJ
-
-# Additional icon links
-# additional_links:
-#   - title: Link name
-#     icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#     url: Link url (eg. https://google.com)
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
 
 # About Section
-# about_title: About Me (Use this to override about section title)
 about_profile_image: images/pjh.jpg
 about_content: |
-  웹 백엔드 엔지니어로 개발한 경력이 있습니다.
-  느린 것보다 빠른 것을 더 좋아하고,
-  혼자 고민하는 것보다 같이 고민하는 것을 좋아합니다.
-  <mark>성능 개선 포인트</mark>나 <mark>유지 보수</mark>가 가능한 부분에 대해 적용한 경험이 있습니다.
+  NodeJS, NestJS와 MySQL 기반의 서버 개발에 익숙하며,
+  <mark>문서 분석과 실험을 통해 깊이 있게 기술을 탐구하는 것</mark>,
+  그리고 <mark>장애 발생 시 상황을 재현하고 원인을 파악</mark>하는 것을 즐깁니다.<br>
+
+  산업기능요원 복무 기간 동안 코인 입출금 서비스, 정산 시스템, 입출금 현황 대시보드 API 등 실무 중심의 백엔드 개발 경험을 쌓았습니다.
+  특히, 웹소켓 통신으로 **약 3배의 성능 향상**과 MySQL 실행계획 분석을 통해, **2s -> 0.1ms로 데이터베이스 튜닝**을 이끌어냈습니다.<br>
+
+  또한, **API Rate Limit 시스템을 구축**하여 유저별 API 호출 수를 제한하는 기능을 구현하였고,
+  **모니터링 시스템 구축(Slack + Sentry), PNPM 모노레포 운영 경험**등이 있으며,
+  항상 <mark>서비스 안정성</mark>과 <mark>확장성을 고민</mark>하는 개발자로 성장하고자 합니다.
 
 content:
   - title: Experience
@@ -235,12 +211,7 @@ content:
         caption: 2015.03 - 2018.02
 
 # Footer
-footer_show_references: true
-# references_title: References on request (Override references text)
-
-# Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+footer_show_references: false
 
 sass:
   sass_dir: _sass
