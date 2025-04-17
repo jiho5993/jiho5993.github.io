@@ -121,40 +121,45 @@ content:
       - layout: left
         title: NerdIT
         caption: 2022.01 ~ 2022.10
-        # link: 얜뭐지
-        # link_text: 이건 뭐지
         additional_links:
           - title: 👉 API Github</br>
             icon: fab fa-github
-            url: https://github.com/jiho5993/movchatbot/tree/main
+            url: https://github.com/DCPT-KNP/NerdIT-Backend
         quote: >
-          한 줄 요약
+          디자이너들을 위한 자기개발 서비스
         description: |
-          - 내용
+          - 서버 개발 전담
+          - 프론트엔드 개발자도 서버를 쉽게 실행할 수 있도록 Docker 스크립트 작성
+          - 소셜 로그인 기능 구현
+          - NestJS 프레임워크를 사용하여 API 서버 개발
+            - <mark>Pipe</mark>, <mark>Guard</mark>, <mark>Filter</mark>등 NestJS의 다양한 기능을 활용
+            - <mark>TypeORM</mark>을 사용하여 Repository 관리
+          - Postman으로 API 문서화 (👉 [링크](https://documenter.getpostman.com/view/9352500/VUqpsxcG))
       - layout: left
         title: Gyumongeats
         caption: 2021.02 ~ 2021.06
-        # link: 얜뭐지
-        # link_text: 이건 뭐지
         additional_links:
           - title: 👉 API Github</br>
             icon: fab fa-github
-            url: https://github.com/jiho5993/movchatbot/tree/main
+            url: https://github.com/jiho5993/gyumongeats
         quote: >
-          한 줄 요약
+          쿠팡이츠 클론 프로젝트
         description: |
-          - 내용
+          - 서버 개발 전담
+          - AWS Elastic Beanstalk을 활용하여 배포 (현재는 중단된 상태)
+          - Sequelize ORM을 사용하여 DB 연동
       - layout: left
         title: 채팅 웹 어플리케이션
         caption: 2019.04 ~ 2019.06
         additional_links:
           - title: 👉 API Github</br>
             icon: fab fa-github
-            url: https://github.com/jiho5993/movchatbot/tree/main
+            url: https://github.com/jiho5993/open_source_chat_B-02
         quote: >
-          한 줄 요약
+          웹소켓을 활용한 실시간 채팅 웹 어플리케이션
         description: |
-          - 내용
+          - ExpressJS와 SocketIO를 사용하여 웹소켓 서버 구현
+          - Heroku를 활용하여 배포
   - title: Skills
     layout: list
     content:
