@@ -209,6 +209,16 @@ content:
       - layout: left
         title: 유신고등학교
         caption: 2015.03 - 2018.02
+  - title: 포스팅
+    layout: text
+    content: |
+      - [빠르게 변하는 블록체인 생태계 반영을 위한 Websocket 기술과 Helper 구현](https://jiho5993.notion.site/Websocket-Helper-15714d25e71c80e1a6c2c00c6ebbca77)
+      - [API Rate Limit으로 무차별 요청 막기](https://jiho5993.notion.site/API-Rate-Limit-15f14d25e71c8082886dc09771c5d57d)
+      - [Explain Analyze로 쿼리 튜닝하기](https://jiho5993.notion.site/Explain-Analyze-18f14d25e71c80758cd9fbafa9a9c1ff)
+      - [AWS SES Template으로 이메일 템플릿 관리하기](https://jiho5993.notion.site/AWS-SES-Template-db84325e14104c6a867db359f871c991)
+      - [Metadata Lock](https://jiho5993.notion.site/Metadata-Lock-1ba8cea5df1b42549d501e22c164d7ce)
+      - [비트코인의 원리 및 기본 동작](https://jiho5993.notion.site/ee436ccbce0541b18199a7abe6c31143)
+      - [비트코인 Script](https://jiho5993.notion.site/Script-3d7eb03951be4e558ece9fcdbb2b889b)
 
 # Footer
 footer_show_references: false
