@@ -27,7 +27,7 @@ about_content: |
   그리고 <mark>장애 발생 시 상황을 재현하고 원인을 파악</mark>하는 것을 즐깁니다.<br>
 
   산업기능요원 복무 기간 동안 코인 입출금 서비스, 정산 시스템, 입출금 현황 대시보드 API 등 실무 중심의 백엔드 개발 경험을 쌓았습니다.
-  특히, 웹소켓 통신으로 **약 3배의 성능 향상**과 MySQL 실행계획 분석을 통해, **2s -> 0.1ms로 데이터베이스 튜닝**을 이끌어냈습니다.<br>
+  특히, 웹소켓 통신으로 **약 3배의 성능 향상**과 MySQL 실행계획 분석을 통해, **2s > 0.1ms로 데이터베이스 튜닝**을 이끌어냈습니다.<br>
 
   또한, **API Rate Limit 시스템을 구축**하여 유저별 API 호출 수를 제한하는 기능을 구현하였고,
   **모니터링 시스템 구축(Slack + Sentry), PNPM 모노레포 운영 경험**등이 있으며,
@@ -55,6 +55,24 @@ content:
   - title: Project
     layout: list
     content:
+      - layout: left
+        title: 사보타지 온라인 보드게임
+        caption: 2025.04 ~ 2023.06
+        # link: 얜뭐지
+        # link_text: 이건 뭐지
+        additional_links:
+          - title: 👉 API Github</br>
+            icon: fab fa-github
+            url: https://github.com/Software-Engineering-GoldStone/Backend
+        quote: >
+          온라인 보드게임 프로토타입
+        description: | # this will include new lines to allow paragraphs
+          - Socket.IO 뼈대 코드 구축
+            - 이벤트 등록 로직을 <mark>도메인 별로 분리하여 관리</mark> (👉 [링크](https://jiho5993.notion.site/1a714d25e71c80fa8d8dfde59f6a79e4#20114d25e71c8017a790f12880183ca0))
+          - 비즈니스 로직 구현
+            - 게임 룸 생성, 입장, 시작 등 게임 진행에 필요한 로직 구현
+            - 내부 메모리를 사용한 GlobalSession 구현
+            - 각 로직에 대한 테스트 코드 작성
       - layout: left
         title: WaggleWaggle
         caption: 2022.11 ~ 2023.12
@@ -158,6 +176,12 @@ content:
           - Visual Studio Code, Webstorm, DataGrip
           - Docker, Sentry, Slack
           - AWS EC2, AWS RDS, AWS S3
+  - title: 자격증
+    layout: list
+    content:
+      - layout: left
+        title: TOPCIT 수준 3
+        caption: 2025.05.24
   - title: 대내외 활동
     layout: list
     content:
